@@ -207,7 +207,7 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><a class="nav-link active active-tag"  data-images-toggle="all">Tous</a></li>';
+        '<li class="nav-item nav-link active active-tag" data-images-toggle="all">Tous</li>';
       $.each(tags, function (index, value) {
         tagItems += `<li class="nav-item active">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
