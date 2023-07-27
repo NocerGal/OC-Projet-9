@@ -120,12 +120,15 @@ body {
   position: relative;
   margin-bottom: 0 !important;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 .item-column::after {
   content: '';
   display: block;
   padding-bottom: 100%;
 }
+
 .gallery-item {
   position: absolute;
   width: 100%;
@@ -133,6 +136,7 @@ body {
   object-fit: cover;
   padding: 0.5em;
 }
+
 .mg-prev,
 .mg-next {
   width: 30px;
