@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'Spectral_LightItalic';
+  src: url(/assets/fonts/Spectral-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Spectral_Light';
+  src: url(/assets/fonts/Spectral-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Spectral_ExtraBoldItalic';
+  src: url(/assets/fonts/Spectral-ExtraBoldItalic.ttf);
+}
+
 body {
   max-width: 1920px;
   margin: auto;
@@ -20,6 +40,7 @@ body {
 
 .top-header .name {
   font-size: 26px;
+  font-weight: 400;
 }
 
 .nav ul {
@@ -77,23 +98,18 @@ body {
   margin-top: 1em;
   margin-bottom: 60px;
   font-size: 30px;
-}
-.about-me__introduction {
-  font-family: 'Spectral';
-  font-weight: 800;
-  font-style: italic;
-  width: 60%;
-  line-height: 1.2;
+  font-weight: 400;
 }
 
-#about-me p {
+#about-me p:last-child {
   width: 80%;
   font-size: 14px;
 }
 
-#about-me .about-me__introduction {
-  font-size: 1rem;
-  margin-bottom: 8px;
+.about-me__introduction {
+  font-family: 'Spectral_ExtraBoldItalic';
+  width: 60%;
+  line-height: 1.2;
 }
 
 #gallery {
@@ -103,7 +119,15 @@ body {
   text-align: center;
   padding-block: 2em;
   font-size: calc(1.3rem + 0.6vw);
+  font-weight: 400;
 }
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 1.75rem;
+  }
+}
+
 .gallery .nav {
   justify-content: center;
 }
@@ -112,7 +136,6 @@ body {
   color: #fff;
   background-color: #beb45a;
   border-radius: 0;
-  padding: 0.5rem 1rem;
 }
 .nav-pills .nav-link {
   color: #000;
@@ -121,15 +144,12 @@ body {
   position: relative;
   margin-bottom: 0 !important;
   padding: 0;
-  height: 100%;
-  width: 100%;
 }
 .item-column::after {
   content: '';
   display: block;
   padding-bottom: 100%;
 }
-
 .gallery-item {
   position: absolute;
   width: 100%;
@@ -137,7 +157,6 @@ body {
   object-fit: cover;
   padding: 0.5em;
 }
-
 .mg-prev,
 .mg-next {
   width: 30px;
@@ -150,23 +169,27 @@ body {
 }
 
 .quote {
-  font-family: 'Spectral';
-  font-style: italic;
+  font-family: 'Spectral_LightItalic';
   width: 70%;
   margin: auto;
   padding-block: 3em;
 }
+
 .quote__text {
-  font-family: Spectral;
-  font-style: italic;
-  font-weight: 300;
+  font-family: 'Spectral_LightItalic';
+
   font-size: calc(1.375rem + 1.5vw);
   line-height: 1.2;
 }
 
+@media (min-width: 1200px) {
+  .quote__text {
+    font-size: 2.5rem;
+  }
+}
+
 .quote__author {
-  font-family: Spectral;
-  font-weight: 800;
+  font-family: 'Spectral_Light';
   font-size: 22px;
 }
 
