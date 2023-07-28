@@ -5,17 +5,17 @@
 
 @font-face {
   font-family: 'Spectral_LightItalic';
-  src: url(/assets/fonts/Spectral-LightItalic.ttf);
+  src: url(./fonts/Spectral-LightItalic.ttf);
 }
 
 @font-face {
   font-family: 'Spectral_Light';
-  src: url(/assets/fonts/Spectral-Light.ttf);
+  src: url(./fonts/Spectral-Light.ttf);
 }
 
 @font-face {
   font-family: 'Spectral_ExtraBoldItalic';
-  src: url(/assets/fonts/Spectral-ExtraBoldItalic.ttf);
+  src: url(./fonts/Spectral-ExtraBoldItalic.ttf);
 }
 
 body {
