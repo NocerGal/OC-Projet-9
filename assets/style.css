@@ -68,9 +68,9 @@ img {
   color: #000;
 }
 
-.social-link img {
+/* .social-link img {
   width: 20px;
-}
+} */
 
 #about {
   display: flex;
@@ -144,7 +144,7 @@ img {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #beb45a;
+  background-color: #605620;
   border-radius: 0;
 }
 .nav-pills .nav-link {
